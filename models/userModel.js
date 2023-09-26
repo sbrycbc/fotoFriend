@@ -23,6 +23,18 @@ const userSchema = new Schema(
       required: [true, 'Der Bereich „Password“ ist erforderlich'],
       minLength: [4, 'Mindestens 4 Zeichen'],
     },
+    followers: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+      }
+    ],
+    followings: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+      }
+    ]
   },
   {
     timestamps: true,

@@ -23,9 +23,17 @@
                         <p>
                            <%= photo.description %>
                         </p>
-                        <a class="read_more" href="about.html">
+                        <a class="read_more" href="/users/<%= photo.user._id %>">
                            Artist: <%= photo.user.username %>
                         </a>
+                        <div style="margin-top: 30px ;">
+                           <ul style="display: flex; justify-content: space-between;">
+                              <li><a style="min-width: 266px;" class="read_more" href="#">Update</a></li>
+                              <li><a style="min-width: 266px;" class="read_more"
+                                    href="/photos/<%= photo._id %>?_method=DELETE"
+                                    onclick="return confirm('Möchten Sie das Foto löschen?')">Delete</a></li>
+                           </ul>
+                        </div>
                      </div>
                   </div>
                   <div class="col-md-6">
