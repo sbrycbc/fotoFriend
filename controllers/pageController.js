@@ -199,7 +199,7 @@ const sendMail = async (req, res) => {
       html: htmlTemplate, // html body
     });
 
-    res.status(200).json({ succeeded: true });
+    res.status(200).redirect('/index');
   } catch (error) {
     res.status(500).json({
       succeeded: false,
