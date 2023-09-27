@@ -100,7 +100,7 @@ const updatePhoto = async (req, res) => {
         req.files.image.tempFilePath,
         {
           use_filename: true,
-          folder: 'laufMomente',
+          folder: 'fotoFriend',
         }
       );
 
