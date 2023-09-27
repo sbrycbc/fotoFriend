@@ -19,7 +19,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="titlepage text_align_center">
-                <h2>Willkommen <%= user.username %>
+                <h2>Willkommen <%= user.username.toUpperCase() %>
                 </h2>
               </div>
             </div>
@@ -52,7 +52,7 @@
         </div>
       </div>
       <!-- end customers  -->
-      <!-- <% if (photos.length> 0 ) { %> -->
+      <% if (photos.length> 0 ) { %>
       <div class="gallery">
         <div class="container_with">
           <div class="row">
@@ -65,32 +65,30 @@
           <div class="tz-gallery">
             <div class="row">
 
-              <!-- <% for (photo of photos) { %> -->
+              <% for (photo of photos) { %>
                 <div class="col-lg-4 col-md-6 ma_bottom30">
                   <div class="lightbox">
-                    <img src="<%= photos[0].url %>" alt="<%= photos[0].name %>">
+                    <img src="<%= photo.url %>" alt="<%= photo.name %>">
                     <div class="view_main">
                       <div class="pose">
-                        <a class="read_more" href="/photos/<%= photos[0]._id %>"><img src="/images/ga.png" alt="#" /></a>
+                        <a class="read_more" href="/photos/<%= photo._id %>"><img src="/images/ga.png" alt="#" /></a>
                         <h3 style="padding-top:10px; padding-bottom:10px">
-                          <!-- <%= photo.name %> -->
-                          aa
+                          <%= photo.name %>
                         </h3>
                         <p style="padding-top:10px;">
-                          <!-- <%= photo.description.substring(0, 80)+ "..." %> -->
-                          aa
+                          <%= photo.description.substring(0, 80)+ "..." %>
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- <% } %> -->
+                <% } %>
 
             </div>
           </div>
         </div>
       </div>
-      <!-- <% } %> -->
+      <% } %>
       
       <% if (user.followers.length> 0 ) { %>
         <div class="team">

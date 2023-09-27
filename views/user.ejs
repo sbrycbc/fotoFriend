@@ -19,7 +19,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="titlepage text_align_center">
-                <h2>Wilkommen <%= user.username %>
+                <h2>Wilkommen <%= user.username.toUpperCase() %> 's Welt
                 </h2>
               </div>
             </div>
@@ -62,8 +62,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="titlepage text_align_center">
-                <span>03</span>
-                <h2>Our gallery</h2>
+                <h2><%= user.username.toUpperCase() %> 's  Gallerie</h2>
               </div>
             </div>
           </div>

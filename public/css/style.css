@@ -346,7 +346,7 @@ button {
     color: #99D0D3;
 }
 .navbar-area {
-    float: left;
+    float: right;
 }
 .site-navbar ul {
     margin: 0;
@@ -367,7 +367,7 @@ button {
 }
 
 .site-navbar ul li {
-    padding-right: 60px;
+    padding-right: 40px;
 }
 
 .site-navbar ul li:last-child {

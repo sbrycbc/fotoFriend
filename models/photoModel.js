@@ -28,6 +28,9 @@ const photoSchema = new Schema({
     url: {
         type: String,
         required: true,
+    },
+    image_id : {
+        type: String,
     }
 });
 

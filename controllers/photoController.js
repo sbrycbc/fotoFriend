@@ -30,12 +30,9 @@ const createPhoto = async (req, res) => {
     });
   }
 };
-
 const getAllPhotos = async (req, res) => {
   try {
-    const photos = res.locals.user
-      ? await Photo.find({ user: { $ne: res.locals.user._id } })
-      : await Photo.find({});
+    const photos = await Photo.find().sort({ uploadedAt: -1 }).limit(15);
     res.status(200).render('photos', {
       photos,
       link: 'photos',
@@ -47,6 +44,24 @@ const getAllPhotos = async (req, res) => {
     });
   }
 };
+
+
+// const getUserPhotos = async (req, res) => {
+//   try {
+//     const photos = res.locals.user
+//       ? await Photo.find({ user: { $ne: res.locals.user._id } })
+//       : await Photo.find({});
+//     res.status(200).render('photos', {
+//       photos,
+//       link: 'photos',
+//     });
+//   } catch (error) {
+//     res.status(500).json({
+//       succeded: false,
+//       error,
+//     });
+//   }
+// };
 
 const getAPhoto = async (req, res) => {
   try {
