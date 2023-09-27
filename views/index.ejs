@@ -31,8 +31,26 @@
                               <li data-target="#banner1" data-slide-to="2"></li>
                            </ol>
                            <div class="carousel-inner">
+                              <% photos.forEach((photo, index) => {
+                                 %>
+
+                             <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                              <div class="container">
+                                 <div class="carousel-caption relative">
+                                    <div class="row d_flex">
+                                       <div class="col-md-12">
+                                          <div class="cemara">
+                                             <figure><img src="<%= photo.url %>" alt="#" /></figure>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                              <% }); %>
+
                               <!-- first slide -->
-                              <div class="carousel-item active">
+                              <!-- <div class="carousel-item active">
                                  <div class="container">
                                     <div class="carousel-caption relative">
                                        <div class="row d_flex">
@@ -44,9 +62,9 @@
                                        </div>
                                     </div>
                                  </div>
-                              </div>
+                              </div> -->
                               <!-- second slide -->
-                              <div class="carousel-item">
+                              <!-- <div class="carousel-item">
                                  <div class="container">
                                     <div class="carousel-caption relative">
                                        <div class="row d_flex">
@@ -58,9 +76,9 @@
                                        </div>
                                     </div>
                                  </div>
-                              </div>
+                              </div> -->
                               <!-- third slide-->
-                              <div class="carousel-item">
+                              <!-- <div class="carousel-item">
                                  <div class="container">
                                     <div class="carousel-caption relative">
                                        <div class="row d_flex">
@@ -72,7 +90,7 @@
                                        </div>
                                     </div>
                                  </div>
-                              </div>
+                              </div> -->
                            </div>
                            <!-- controls -->
                            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
