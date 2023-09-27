@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "0807bbef-295c-4b6a-9a51-45d6a2cf38ca",
+		"name": "fotoFriend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29518966"
+	},
+	"item": [
+		{
+			"name": "register_new_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"sbry12\",\n    \"email\":\"sbry12@gmail.com\",\n    \"password\":\"sbyr1212\",\n    \"image\":\"/images/member_9.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3003/users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login_with_password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"sbry12\",\n    \"password\":\"sbry1212\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3003/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_users_with_token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTEzMjFkODUyMjczZDc1MDJiZDE4MWUiLCJpYXQiOjE2OTU4Mzc5OTUsImV4cCI6MTY5NTkyNDM5NX0.mHp-velCYthP3at9ETGPSZyioAFg20FAFKPW5cIblXw"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3003/users"
+			},
+			"response": []
+		},
+		{
+			"name": "get_dashboard_with_token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTEzMjFkODUyMjczZDc1MDJiZDE4MWUiLCJpYXQiOjE2OTU4Mzc5OTUsImV4cCI6MTY5NTkyNDM5NX0.mHp-velCYthP3at9ETGPSZyioAFg20FAFKPW5cIblXw"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "localhost:3003/users/dashboard"
+			},
+			"response": []
+		},
+		{
+			"name": "get_photo_by_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "localhost:3003/photos/651434a6f6d1997d0ea086b7"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_photo_by_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3003/photos/65143d6eb83bb723d22090ae"
+			},
+			"response": []
+		},
+		{
+			"name": "update_photo_by_id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"new Photo\",\n    \"description\": \"Ungalubliche momentan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3003/photos/6514348cf6d1997d0ea086a4"
+			},
+			"response": []
+		},
+		{
+			"name": "create_photo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"new Photos\",\n    \"description\":\"updated\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3003/photos/"
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_photos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3003/photos/"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

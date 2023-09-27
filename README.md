@@ -15,6 +15,8 @@ Dieses Projekt ist eine Online-Foto-Galerie App, die mit Expressjs, Express, und
 - Json Web Token
 - Bcrypt
 
+<hr>
+
 ## Routes
 
 ### Project pages routes
@@ -55,6 +57,14 @@ Dieses Projekt ist eine Online-Foto-Galerie App, die mit Expressjs, Express, und
 | GET       | `/users/:id  `        | Authorization: \< JWT \>        | --                            |
 | PUT       | `/users/:id/follow`   | Authorization: \< JWT \>        | {user._id}                    |
 | GET       | `/users/:id/unfollow` | Authorization: \< JWT \>        | {user._id}                    |
+
+<hr>
+
+## Testing Routes
+
+- For testing routes, docs/fotoFriend.postman_collection must be added to postman..
+
+- See cookies for copying jwt token.
 
 <hr>
 
