@@ -99,8 +99,8 @@ const getAllUsers = async (req, res) => {
 const getAUser = async (req, res) => {
   try {
     const user = await User.findById({ _id: req.params.id });
-    const inFollowers = user.followers.some(()=> {
-      return follower.equal(res.locals.user._id)
+    const inFollowers = user.followers.some((follower)=> {
+      return follower.equals(res.locals.user._id)
     })
     const photos = await Photo.find({ user: user._id });
     res.status(200).render('user', {

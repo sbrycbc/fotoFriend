@@ -28,7 +28,7 @@ const photoSchema = new Schema({
     url: {
         type: String,
         required: true,
-    },
+    }
 });
 
 const Photo = mongoose.model("Photo", photoSchema)
