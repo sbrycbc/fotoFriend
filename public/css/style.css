@@ -10,6 +10,9 @@ import Fonts -
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Sedgwick+Ave+Display&display=swap');
+
 
 /*****---------------------------------------- 1) 
  2) font-family: 'Poppins', sans-serif;
@@ -319,15 +322,16 @@ button {
 
 .header-area {
     width: 100%;
-    border-top: #f6388e solid 16px;
+    border-top: #99D0D3 solid 16px;
     background: #fff;
     height: 100px;
     padding: 23px 20px;
 }
 
 .logo a {
-    color: #1c1c1b;
+    color: #B47EB2;
     font-weight: 600;
+    font-family: 'Sedgwick Ave Display', cursive;
     font-size: 20px;
     text-transform: uppercase;
     display: block;
@@ -335,7 +339,7 @@ button {
 
 }
 .logo a span {
-    color: #f6388e;
+    color: #99D0D3;
 }
 .navbar-area {
     float: left;
@@ -349,12 +353,13 @@ button {
 
 .site-navbar ul li a {
     color: #1c1c1b;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     text-decoration: none;
     padding:0px;
     font-weight: normal;
     font-weight: 500;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 
 .site-navbar ul li {
@@ -366,10 +371,10 @@ button {
 }
 
 .site-navbar ul li a:hover {
-    color: #f6388e;
+    color: #B47EB2;
 }
 .site-navbar ul li a.active {
-    color: #f6388e;
+    color: #B47EB2;
 }
 
 /* navbar regular css end */
@@ -459,7 +464,7 @@ ul.email li i {
 
 /** banner section **/
 .slider_main {
-    background: url(../images/banner.jpg) ;
+    background-color: #eee7ee ;
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -483,6 +488,7 @@ ul.email li i {
 .creative {
     text-align: left;
     padding-left: 80px;
+    font-family: 'Libre Baskerville', serif;
 }
 .bt_fe {
     position: relative;
@@ -493,13 +499,13 @@ ul.email li i {
     left: 0;
     top: 0;
     height: 100%;
-    background: #f6388e;
+    background: #FCE0D5;
     width: 40%;
 }
 .creative h1 {
     font-size: 100px;
     line-height: 100px;
-    color: #fff;
+    color: #99D0D3;
     font-weight: bold;
     padding-bottom: 50px;
     text-transform: uppercase;
@@ -516,8 +522,9 @@ ul.email li i {
     color:#000;
 }
 .creative .read_more:hover {
-    background: #000;
-    color: #fff;
+    background: #B47EB2;
+    color: #99D0D3;
+    border-radius: 40px;
 }
 .cemara figure {
     margin: 0;
@@ -556,7 +563,7 @@ ul.email li i {
 #banner1 .carousel-control-prev:focus,
 #banner1 .carousel-control-prev:hover {
     color: #fff;
-    background: #fa136f;
+    background:#99D0D3;
 }
 
 
@@ -581,7 +588,7 @@ ul.email li i {
 }
 
 .lightbox {
-    background: #f6388e;
+    background:#021E20;
 }
 
 .view_main {
@@ -596,7 +603,7 @@ ul.email li i {
      align-items: center;
      opacity: 0;
      transition: ease-in all 0.5s;
-     background: #f6388ed9;
+     background:#FEB9C6;
      cursor: pointer;
 }
 
@@ -663,7 +670,7 @@ ul.email li i {
     width: 122px;
     height: 122px;
     line-height: 122px;
-    background: #f6388e;
+    background: #99D0D3;
     color: #fff;
     font-weight: bold;
     font-size: 60px;
