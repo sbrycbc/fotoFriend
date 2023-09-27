@@ -36,7 +36,7 @@
                   it
                 </p>
                 <h3>Der Zweck der Verwendung</h3>
-                <i><img src="/images/custo.jpg" alt="#" /></i>
+                <i><img src="<%= user.image %>" alt="#" /></i>
               </div>
             </div>
           </div>
@@ -100,16 +100,16 @@
                 </div>
               </div>
               <% for (follower of user.followers) { %>
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <div class="team_box text_align_center">
                     <div class="team_img">
-                      <figure><img src="/images/team1.jpg" alt="#" /></figure>
+                      <figure><img src="<%= follower.image %>" alt="#" /></figure>
                     </div>
                     <div class="craig">
                       <h3>
                         <%= follower.username %>
                       </h3>
-                      <span>PHOTOGRAPHER</span>
+                      <span>FOTOGRAFIN</span>
                       <ul class="social_icon ">
                         <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
@@ -138,16 +138,16 @@
                     </div>
                   </div>
                   <% for (following of user.followings) { %>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                       <div class="team_box text_align_center">
                         <div class="team_img">
-                          <figure><img src="/images/team1.jpg" alt="#" /></figure>
+                          <figure><img src="<%= following.image %>" alt="#" /></figure>
                         </div>
                         <div class="craig">
                           <h3>
                             <%= following.username %>
                           </h3>
-                          <span>PHOTOGRAPHER</span>
+                          <span>FOTOGRAFIN</span>
                           <ul class="social_icon ">
                             <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             </li>

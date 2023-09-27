@@ -29,14 +29,14 @@
         </div>
 
         <% for (user of users) { %>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="team_box text_align_center">
             <div class="team_img">
-              <figure><img src="images/about_img.png" alt="#" /></figure>
+              <figure><img src="<%= user.image %>" alt="#" /></figure>
             </div>
             <div class="craig">
               <h3><%= user.username %></h3>
-              <span>PHOTOGRAPHER</span>
+              <span>FOTOGRAFIN</span>
               <ul class="social_icon">
                 <li>
                   <a href="Javascript:void(0)"

@@ -228,13 +228,13 @@ button {
 }
 
 .titlepage h2 {
-    font-size: 60px;
+    font-size: 40px;
     color: #B47EB2;
     line-height: 60px;
     font-weight: bold;
     padding: 0;
     display: inline-block;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 
 .titlepage span {
@@ -751,11 +751,15 @@ ul.email li i {
 }
 .team_img figure {
     margin: 0;
-
 }
+.team_img figure img{
+    border-radius: 50%;
+    min-width: 15rem;
+}
+
 .craig {
-    margin: 0 23px;
-    padding: 35px 20px;
+    margin: 0 13px;
+    padding: 15px 10px;
     background: #fff;
     box-shadow: 0px 0 38px rgba(2, 3, 8, 0.13);
     margin-top: -44px;
@@ -780,7 +784,7 @@ ul.email li i {
     font-family: 'Libre Baskerville', serif;
  }
 ul.social_icon {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 ul.social_icon li {
     display: inline-block;
@@ -794,7 +798,7 @@ ul.social_icon li a i {
     text-align: center;
 }
 ul.social_icon li a i:hover {
-    color: #f6388e;
+    color: #99D0D3;
     transition: ease-in all 0.5s;
 }
 
@@ -825,6 +829,7 @@ ul.social_icon li a i:hover {
     padding-bottom: 70px;
 }
 .satteb i img {
+    max-width:15rem;
     border-radius: 50%;
     margin-bottom: -121px;
 }

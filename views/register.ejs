@@ -67,10 +67,12 @@
                const email = form.email.value
                const password = form.password.value
                const username = form.username.value
+               const randomNumber = Math.floor(Math.random() * 9);
+               const image = `/images/member_${randomNumber}.jpg`;
                try {
                   const res = await fetch('users/register', {
                      method: "POST",
-                     body: JSON.stringify({ email, password, username }),
+                     body: JSON.stringify({ email, password, username, image }),
                      headers: { "Content-Type": "application/json" }
                   })
                   const data = await res.json();
