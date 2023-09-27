@@ -1,10 +1,23 @@
-### API Documentation
+# Foto Friend
 
-We will start our project by first documenting all of the routes and data models for our API. Following best practices we will use _verbs_ to specify the type of operation being done and _nouns_ when naming endpoints.
+Dieses Projekt ist eine Online-Foto-Galerie App, die mit Expressjs, Express, und Mongodb entwickelt wurde. Benutzer können durch diese App eigene Foto Galerie erstellen, und andere user's foto galerie sehen und folgen.
 
-#### Routes
+## Backend Technologies
 
-##### Project pages routes
+- Expessjs 
+- Express
+- Nodemailer
+- Validator
+- Express-fileupload
+- Cloudinary
+- Mongodb
+- Cookie-parser
+- Json Web Token
+- Bcrypt
+
+## Routes
+
+### Project pages routes
 
 | HTTP verb | URL                        | Request body | Action                        |
 | --------- | -------------------------- | ------------ | ----------------------------- |
@@ -19,7 +32,7 @@ We will start our project by first documenting all of the routes and data models
 (*) It sends email with nodemailer. Before using, email and password should be added.
 
 
-##### Photo routes
+### Photo routes
 
 | HTTP verb | URL                  | Request body | Action                     |
 | --------- | -------------------- | ------------ | -------------------------- |
@@ -27,11 +40,11 @@ We will start our project by first documenting all of the routes and data models
 | GET       | `/photo`             | (empty)      | Returns all photos         |
 | GET       | `/photo/:id`         | (empty)      | Returns a photo by id      |
 | DELETE    | `/photo/:id`         | (empty)      | Delete a photo by id       |
-| PUT       | `/photo/:id`         | JSON         | Update a photo by id       |
+| PATCH     | `/photo/:id`         | JSON         | Update a photo by id       |
 
 
 
-##### User routes
+### User routes
 
 | HTTP verb | URL                   | Request Headers                 | Request Body                  |
 | --------- | --------------        | ------------------------------- | -------------------------     |
@@ -45,9 +58,9 @@ We will start our project by first documenting all of the routes and data models
 
 <hr>
 
-#### Models
+## Models
 
-##### Photo Model
+### Photo Model
 
 ```js
 {
@@ -60,7 +73,7 @@ We will start our project by first documenting all of the routes and data models
 }
 ```
 
-##### User Model
+### User Model
 
 ```js
 {
