@@ -256,11 +256,12 @@ button {
 
 .read_more {
     font-size: 17px;
-    background: #f6388e;
+    font-family: 'Libre Baskerville', serif;
+    background: black;
     max-width: 266px;
     width: 100%;
     transition: ease-in all 0.5s;
-    color: #fff;
+    color: white;
     display: block;
     height: 76px;
     line-height: 76px;
@@ -270,8 +271,9 @@ button {
 }
 
 .read_more:hover {
-    background: #fff;
-    color: #000;
+    background:#99D0D3;
+    color: white;
+    border-radius: 40px;
 }
 
 .text_align_left {
@@ -700,7 +702,7 @@ ul.email li i {
 /** about section **/
 
 .about {
-    background: #e5b9d0;
+    background-color: #eee7ee;
     padding-top: 90px;
     padding-bottom: 90px;
     margin-top: 90px;
@@ -721,12 +723,12 @@ ul.email li i {
  
 }
 .about .titlepage h2 {
-    color: #fff;
+    color: #99D0D3;
 }
 .about .titlepage p {
     padding-top: 45px;
     padding-bottom: 60px;
-    color: #fff;
+    color: black;
 }
 
 
@@ -861,11 +863,12 @@ ul.social_icon li a i:hover {
 .group_form .send_btn {
     font-size: 18px;
     transition: ease-in all 0.5s;
-    background-color: #2a2929;
-    color: #fff;
+    background-color:black;
+    color:white;
     max-width: 159px;
     width: 100%;
     font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
     height: 69px;
     line-height: 69px;
     border-radius: 5px;
@@ -873,9 +876,11 @@ ul.social_icon li a i:hover {
 }
 
 .group_form .send_btn:hover {
-    background-color: #fa3e8a;
+    background-color: 
+    #99D0D3;
     transition: ease-in all 0.5s;
     color: #fff;
+    border-radius: 40px;
 }
 
 #request *::placeholder {
