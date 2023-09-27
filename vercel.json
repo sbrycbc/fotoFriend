@@ -9,11 +9,15 @@
     "routes": [
       {
         "src": "/photos/.*",
-        "dest": "app.js"
+        "dest": "/routes/photoRoute.js"
       },
       {
         "src": "/users/.*",
-        "dest": "app.js"
+        "dest": "/routes/userRoute.js"
+      },
+      {
+        "src": "/.*",
+        "dest": "/routes/pageRoute.js"
       }
     ],
     "env": {
