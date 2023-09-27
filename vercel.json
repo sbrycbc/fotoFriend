@@ -15,5 +15,8 @@
         "src": "/users/.*",
         "dest": "app.js"
       }
-    ]
+    ],
+    "env": {
+        "NODE_ENV": "production"
+      }
   }
