@@ -1,6 +1,6 @@
 # Foto Friend
 
-Dieses Projekt ist eine Online-Foto-Galerie App, die mit Expressjs, Express, und Mongodb entwickelt wurde. Benutzer können durch diese App eigene Foto Galerie erstellen, und andere user's foto galerie sehen und folgen.
+This project is an online photo gallery app developed with Expressjs, Express, and Mongodb. Users can create their own photo gallery through this app, and view and follow other user's photo gallery.
 
 ## Backend Technologies
 
