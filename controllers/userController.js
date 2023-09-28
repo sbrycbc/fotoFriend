@@ -70,7 +70,7 @@ const createToken = (userId) => {
 }
 const getDashboardPage = async (req, res) => {
   const photos = await Photo.find({user: res.locals.user._id });
-  console.log(photos);
+  /* console.log(photos); */
   const user = await User.findById({_id : res.locals.user._id}).populate([
     'followings',
     'followers',
@@ -135,7 +135,7 @@ const followAUser = async (req, res) => {
       },
       {new:true}
     );
-    res.status(200).redirect(`/users/${req.params.id}`);
+    res.status(200).redirect(`/users/dashboard`);
 
   } catch (error) {
     res.status(500).json({
@@ -162,7 +162,7 @@ const unfollowAUser = async (req, res) => {
       },
       {new:true}
     );
-    res.status(200).redirect(`/users/${req.params.id}`);
+    res.status(200).redirect(`/users/dashboard`);
   } catch (error) {
     res.status(500).json({
       succeded: false,
